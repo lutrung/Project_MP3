@@ -1,0 +1,204 @@
+.body {
+    width: 75%;
+    padding: 0 3%;
+    padding-bottom: 110px;
+    background-image: url(https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/theme-background/zma.svg);
+    .body__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+        .header__search {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 50%;
+            .header__search--icon {
+                color: #b3b3b3;
+                font-size: 20px;
+                margin-right: 15px;
+            }
+            .header__search--input {
+                position: relative;
+                background-color: #ffffff1a;
+                border-radius: 20px;
+                height: 40px;
+                width: 100%;
+                max-width: 540px;
+                i {
+                    position: absolute;
+                    cursor: pointer;
+                    font-size: 20px;
+                    top: 10px;
+                    left: 10px;
+                    color: #dadada;
+                }
+                input {
+                    background-color: transparent;
+                    width: 95%;
+                    border: none;
+                    outline: none;
+                    color: #fff;
+                }
+            }
+        }
+        .header__setting {
+            display: flex;
+            align-items: center;
+            button {
+                outline: none;
+                border: none;
+                width: 40px;
+                height: 40px;
+                background-color: #ffffff1a;
+                border-radius: 50%;
+                color: white;
+                margin-left: 10px;
+                opacity: 0.8;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            .avatar {
+                cursor: pointer;
+                width: 40px;
+                height: 40px;
+                margin-left: 10px;
+                border-radius: 50%;
+                background-image: url(/src/Assets/Images/avatar.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+    .body__avatar {
+        text-align: center;
+        margin: 50px 0;
+        .img {
+            width: 95px;
+            height: 95px;
+            margin: auto;
+            border-radius: 50%;
+            background-image: url(/src/Assets/Images/avatar.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        h1 {
+            margin-top: 15px;
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+        }
+    }
+    .body__menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 52px;
+        margin: 50px 0;
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff1a;
+            padding: 3px;
+            border-radius: 15px;
+            color: white;
+            margin: 0;
+            .body__menu-item {
+                display: block;
+                padding: 7px 25px;
+                font-size: 12px;
+                line-height: 1;
+                color: #dadada;
+                cursor: pointer;
+                &:hover {
+                    color: #fff;
+                }
+            }
+            .body__menu-item.active {
+                background-color: #ffffff4d;
+                border-radius: 15px;
+                color: #fff;
+            }
+        }
+    }
+    .body__playlist {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .body__cd {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 50%;
+            animation: spin 5s linear infinite;
+            background-image: url(https://thumbs.gfycat.com/HappygoluckyBlissfulFlyinglemur-size_restricted.gif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@media screen and (max-width: 1200px) {
+    .body {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 769px) {
+    .body {
+        .body__menu {
+            ul {
+                .body__menu-item {
+                    padding: 5px 15px;
+                }
+            }
+        }
+        .body__playlist {
+            .body__cd {
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 741px) {
+    .body {
+        width: 100%;
+        padding-bottom: 0;
+        .body__header {
+            .header__search {
+                width: 100%;
+                i {
+                    display: none;
+                }
+            }
+            .header__setting {
+                display: none;
+            }
+        }
+        .body__avatar {
+            margin: 15px 0;
+            font-size: 25px;
+        }
+        .body__menu {
+            margin: 15px 0;
+            ul {
+                .body__menu-item:nth-child(4),
+                .body__menu-item:nth-child(6),
+                .body__menu-item:nth-child(7) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
