@@ -7,7 +7,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 15px 0;
+        padding: 15px 0 15px 30px;
         .header__search {
             display: flex;
             justify-content: space-around;
@@ -135,7 +135,7 @@
             overflow: hidden;
             border-radius: 50%;
             animation: spin 5s linear infinite;
-            background-image: url(https://thumbs.gfycat.com/HappygoluckyBlissfulFlyinglemur-size_restricted.gif);
+            background-image: url(/src/Assets/Images/cd.gif);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;

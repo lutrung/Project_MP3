@@ -2,6 +2,42 @@
   background-color: #411466;
   width: 12.5%;
   padding: 15px 0px;
+  position: relative;
+}
+
+.menu .openMenu,
+.menu .closeMenu {
+  position: absolute;
+  right: -30px;
+  top: 35px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #fff;
+  font-size: 20px;
+  background-color: #ffffff1a;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.menu .closeMenu {
+  right: 0;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
 }
 
 .menu .menu__logo {
@@ -56,7 +92,7 @@
           align-items: center;
   color: #fff;
   position: fixed;
-  bottom: 0;
+  bottom: 103px;
   padding: 25px;
   width: 12.5%;
   text-align: center;
@@ -71,7 +107,18 @@
 
 @media screen and (max-width: 741px) {
   .menu {
-    display: none;
+    position: fixed;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+  }
+  .menu .menu__createList {
+    width: 100%;
+    bottom: 150px;
   }
 }
 
@@ -92,7 +139,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 15px 0;
+  padding: 15px 0 15px 30px;
 }
 
 .body .body__header .header__search {
@@ -268,7 +315,7 @@
   border-radius: 50%;
   -webkit-animation: spin 5s linear infinite;
           animation: spin 5s linear infinite;
-  background-image: url(https://thumbs.gfycat.com/HappygoluckyBlissfulFlyinglemur-size_restricted.gif);
+  background-image: url(/src/Assets/Images/cd.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

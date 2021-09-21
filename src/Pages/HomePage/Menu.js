@@ -1,8 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Menu() {
+    const [open, setOpen] = useState(false)
+    let openMenu = () => {
+        if (open) {
+            document.querySelector('.menu').style.transform = "translateX(-100%)";
+            setOpen(false)
+        } else {
+            document.querySelector('.menu').style.transform = "translateX(0)";
+            setOpen(true)
+        }
+    }
     return (
         <div className="menu">
+            <div className='openMenu' onClick={() => openMenu()}>
+                <i class="fas fa-caret-right"></i>
+            </div>
+            <div className='closeMenu' onClick={() => openMenu()}>
+                <i class="fas fa-caret-left"></i>
+            </div>
             <img className="menu__logo" src="https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/backgrounds/logo-dark.svg" alt="logo" />
             <div className="menu__items">
                 <div className="item">
