@@ -13,7 +13,7 @@
         font-size: 20px;
         background-color: #ffffff1a;
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
         width: 30px;
@@ -85,6 +85,10 @@
         height: 100%;
         width: 100%;
         transition: all 0.7s;
+        .openMenu,
+        .closeMenu {
+            display: flex;
+        }
         .menu__createList {
             width: 100%;
             bottom: 150px;
