@@ -9,6 +9,7 @@ import BigCityBoi from '../Assets/Musics/BigCityBoi.mp3'
 import NoiNayCoAnh from '../Assets/Musics/NoiNayCoAnh.mp3'
 import DanhMatEm from '../Assets/Musics/DanhMatEm.mp3'
 import CauCa from '../Assets/Musics/CauCa.mp3'
+import NgoiNhaHoaHong from '../Assets/Musics/NgoiNhaHoaHong.mp3'
 // Images
 import ImgHaiPhutHon from '../Assets/Images/2PhutHon.jpg'
 import ImgBa1071 from '../Assets/Images/3107-1.jpg'
@@ -21,6 +22,7 @@ import ImgBigCityBoi from '../Assets/Images/BigCityBoi.jpg'
 import ImgNoiNayCoAnh from '../Assets/Images/NoiNayCoAnh.jpg'
 import ImgDanhMatEm from '../Assets/Images/DanhMatEm.jpg'
 import ImgCauCa from '../Assets/Images/CauCa.gif'
+import ImgNgoiNhaHoaHong from '../Assets/Images/NgoiNhaHoaHong.jpg'
 // eslint-disable-next-line import/no-anonymous-default-export
 export default [
     {
@@ -29,6 +31,13 @@ export default [
         path: CauCa,
         image: ImgCauCa,
         time: '01:05'
+    },
+    {
+        name: 'NGÔI NHÀ HOA HỒNG REMIX',
+        singer: 'DJ BIBO',
+        path: NgoiNhaHoaHong,
+        image: ImgNgoiNhaHoaHong,
+        time: '03:59'
     },
     {
         name: 'BÔNG HOA ĐẸP NHẤT',

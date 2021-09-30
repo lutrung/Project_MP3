@@ -2,7 +2,7 @@ import React from 'react'
 import PlayList from './PlayList'
 
 export default function Body() {
-    let test = (key) => {
+    let clickMenu = (key) => {
         let arr = document.getElementsByClassName('body__menu-item')
         let arrLength = arr.length
         for (let i = 0; i < arrLength; i++) {
@@ -101,13 +101,13 @@ export default function Body() {
             </div>
             <div className="body__menu">
                 <ul>
-                    <li className='body__menu-item' onClick={() => test(0)}>TỔNG QUAN</li>
-                    <li className='body__menu-item' onClick={() => test(1)}>BÀI HÁT</li>
-                    <li className='body__menu-item active' onClick={() => test(2)}>PLAYLIST</li>
-                    <li className='body__menu-item' onClick={() => test(3)}>NGHỆ SĨ</li>
-                    <li className='body__menu-item' onClick={() => test(4)}>ALBUM</li>
-                    <li className='body__menu-item' onClick={() => test(5)}>MV</li>
-                    <li className='body__menu-item' onClick={() => test(6)}>TẢI LÊN</li>
+                    <li className='body__menu-item' onClick={() => clickMenu(0)}>TỔNG QUAN</li>
+                    <li className='body__menu-item' onClick={() => clickMenu(1)}>BÀI HÁT</li>
+                    <li className='body__menu-item active' onClick={() => clickMenu(2)}>PLAYLIST</li>
+                    <li className='body__menu-item' onClick={() => clickMenu(3)}>NGHỆ SĨ</li>
+                    <li className='body__menu-item' onClick={() => clickMenu(4)}>ALBUM</li>
+                    <li className='body__menu-item' onClick={() => clickMenu(5)}>MV</li>
+                    <li className='body__menu-item' onClick={() => clickMenu(6)}>TẢI LÊN</li>
                 </ul>
             </div>
             <div className="body__playlist">
